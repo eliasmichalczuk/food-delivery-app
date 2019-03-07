@@ -1,6 +1,6 @@
 # FoodDeliveryApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+Projeto angular para delivery de comida. Node 10.14.1. Angular 7.2.2. Utilizando json-server.
 
 ## Development server
 

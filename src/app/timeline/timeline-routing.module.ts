@@ -1,18 +1,15 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TimelineComponent } from './timeline/timeline/timeline.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 const routes: Routes = [
   {
     path: '', component: TimelineComponent
-  },
-  {
-    path: 'timeline', component: TimelineComponent
   }
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class TimelineRoutingModule { }

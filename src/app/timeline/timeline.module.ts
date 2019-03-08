@@ -14,9 +14,10 @@ import {MatInputModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
 import { GridComponent } from './search/grid/grid.component';
 import {MatGridListModule} from '@angular/material/grid-list';
+import { CardComponent } from './search/grid/card/card.component';
 
 @NgModule({
-  declarations: [TimelineComponent, SearchComponent, GridComponent],
+  declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent],
   imports: [
     CommonModule,
     TimelineRoutingModule,

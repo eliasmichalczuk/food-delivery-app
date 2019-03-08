@@ -11,6 +11,45 @@
         "name": "Lisa"
       }
     ],
+    "card": [
+      {
+        "id": 1,
+        "name": "Buteco do zeca",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      },
+      {
+        "id": 1,
+        "name": "Buteco do zeca",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      },
+      {
+        "id": 1,
+        "name": "Buteco do zeca",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      },
+      {
+        "id": 1,
+        "name": "Buteco do zeca",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      }
+    ],
+
     "comments": [
       {
         "id": 1,

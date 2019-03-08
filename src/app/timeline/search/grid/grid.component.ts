@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { Card } from 'src/app/dto/card.interface';
 
 @Component({
   selector: 'app-grid',
@@ -10,13 +11,14 @@ export class GridComponent implements OnInit {
   constructor() { }
 
   breakpoint: number;
+  @Input() cards: Array<Card> = [];
 
   ngOnInit() {
-    this.breakpoint = (window.innerWidth <= 600) ? 1 : 2;
+    this.breakpoint = (window.innerWidth <= 890) ? 1 : 2;
   }
 
   onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= 600) ? 1 : 2;
+    this.breakpoint = (event.target.innerWidth <= 890) ? 1 : 2;
   }
 
 }

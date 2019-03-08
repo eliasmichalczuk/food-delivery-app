@@ -15,6 +15,7 @@ import { FormsModule } from '@angular/forms';
 import { GridComponent } from './search/grid/grid.component';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { CardComponent } from './search/grid/card/card.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent],
@@ -29,7 +30,8 @@ import { CardComponent } from './search/grid/card/card.component';
     MatIconModule,
     MatInputModule,
     FormsModule,
-    MatGridListModule
+    MatGridListModule,
+    HttpClientModule
   ]
 })
 export class TimelineModule { }

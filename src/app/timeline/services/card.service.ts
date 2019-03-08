@@ -11,7 +11,11 @@ export class CardService {
     private httpclient: HttpClient
   ) { }
 
-  getCards(query: string) {
-    return this.httpclient.get(environment.connection + '/cards');
+  getCardsNoQueryFilter(page: number) {
+    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20`);
+  }
+
+  getCardsQueryFilter(page: number, query: string) {
+    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20?name_like=${query}`);
   }
 }

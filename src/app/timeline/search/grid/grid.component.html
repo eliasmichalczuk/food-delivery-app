@@ -1,5 +1,5 @@
-<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)">
-  <mat-grid-tile>
-    <app-card></app-card>
+<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)" *ngIf="cards">
+  <mat-grid-tile *ngFor="let card of cards">
+    <app-card  [card]="card"></app-card>
   </mat-grid-tile>
 </mat-grid-list>

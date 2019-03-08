@@ -12,9 +12,11 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatIconModule} from '@angular/material/icon';
 import {MatInputModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { GridComponent } from './search/grid/grid.component';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 @NgModule({
-  declarations: [TimelineComponent, SearchComponent],
+  declarations: [TimelineComponent, SearchComponent, GridComponent],
   imports: [
     CommonModule,
     TimelineRoutingModule,
@@ -25,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     MatFormFieldModule,
     MatIconModule,
     MatInputModule,
-    FormsModule 
+    FormsModule,
+    MatGridListModule
   ]
 })
 export class TimelineModule { }

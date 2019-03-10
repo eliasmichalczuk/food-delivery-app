@@ -13,7 +13,25 @@
     ],
     "card": [
       {
-        "id": 1,
+        "id": 2,
+        "name": "Louro josé",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      },
+      {
+        "id": 3,
+        "name": "Buteco do zeca",
+        "foodType": "Lanches",
+        "amount": "$",
+        "rating": 4.5,
+        "diatance": 12,
+        "time": [35, 45]
+      },
+      {
+        "id": 4,
         "name": "Buteco do zeca",
         "foodType": "Lanches",
         "amount": "$",
@@ -32,25 +50,7 @@
       },
       {
         "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
+        "name": "Nilson gonçalves",
         "foodType": "Lanches",
         "amount": "$",
         "rating": 4.5,

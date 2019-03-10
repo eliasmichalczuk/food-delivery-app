@@ -2,6 +2,7 @@ import { Component, OnInit, Input, HostBinding, ElementRef } from '@angular/core
 import { Card } from 'src/app/dto/card.interface';
 import { style, trigger, state, transition, animate } from '@angular/animations';
 import { timeout } from 'rxjs/operators';
+import { moveItemInArray } from '@angular/cdk/drag-drop';
 
 @Component({
   selector: 'app-card',
@@ -37,7 +38,6 @@ export class CardComponent implements OnInit {
     setTimeout(() => this.changeState(), 200);
   }
 
-  constructor() { }
 
   ngOnInit() {
   }

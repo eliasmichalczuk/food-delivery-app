@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop/index';
+import { Card } from 'src/app/dto/card.interface';
 
 @Component({
   selector: 'app-timeline',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TimelineComponent implements OnInit {
 
+  favorites = 0;
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  drop(event: CdkDragDrop<Card[]>) {
+    this.favorites++;
+    console.log('dropped')
   }
 
 }

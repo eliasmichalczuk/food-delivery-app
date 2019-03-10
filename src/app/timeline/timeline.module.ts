@@ -21,6 +21,7 @@ import { DraggableModule } from './drag-drop-test/draggable/draggable.module';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {DragDropModule} from '@angular/cdk/drag-drop';
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent],
   imports: [
@@ -39,7 +40,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     DraggableModule,
     MatMenuModule,
     MatToolbarModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    DragDropModule
   ]
 })
 export class TimelineModule { }

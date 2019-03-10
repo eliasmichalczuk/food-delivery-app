@@ -22,6 +22,8 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {DragDropModule} from '@angular/cdk/drag-drop';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
+
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent],
   imports: [
@@ -41,7 +43,8 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
     MatMenuModule,
     MatToolbarModule,
     FlexLayoutModule,
-    DragDropModule
+    DragDropModule,
+    MatProgressBarModule
   ]
 })
 export class TimelineModule { }

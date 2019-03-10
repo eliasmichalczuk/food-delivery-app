@@ -4,5 +4,5 @@
     <mat-icon matSuffix>search</mat-icon>
   </mat-form-field>
 </div>
-
-<app-grid [cards]="cards"></app-grid>
+<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+<app-grid [cards]="cards" ></app-grid>

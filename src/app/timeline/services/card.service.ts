@@ -16,6 +16,6 @@ export class CardService {
   }
 
   getCardsQueryFilter(page: number, query: string) {
-    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20?name_like=${query}`);
+    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20?&name_like=${query}`);
   }
 }

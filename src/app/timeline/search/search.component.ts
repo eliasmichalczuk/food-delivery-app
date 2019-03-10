@@ -16,6 +16,7 @@ export class SearchComponent implements OnInit {
   private _page = 1;
 
   cards: Array<Card> = [];
+  loading = false;
 
   set search(search: string) {
     if (search === '') {
@@ -30,20 +31,22 @@ export class SearchComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.loading = true;
     this.getCardsNoQueryFilter();
   }
 
   getCardsNoQueryFilter() {
     this.cardService.getCardsNoQueryFilter(this._page).subscribe((response: Array<Card>) => {
       this.cards = response;
-      console.log('res', response);
+      this.loading = false;
     });
   }
 
   onEnterKey(event: Event) {
+    this.loading = true;
     this.cardService.getCardsQueryFilter(this._page, this._query).subscribe((response: Array<Card>) => {
       this.cards = response;
-      console.log('cards respon', response);
+      this.loading = false;
     });
   }
 

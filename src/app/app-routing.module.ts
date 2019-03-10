@@ -7,10 +7,10 @@ import { DragDropTestComponent } from './timeline/drag-drop-test/drag-drop-test.
 
 const routes: Routes = [
   {
-    path: 'timeline', component: TimelineComponent
+    path: '', component: TimelineComponent
   },
   {
-    path: '', component: DragDropTestComponent
+    path: 'dragdrop', component: DragDropTestComponent
   }
 ];
 

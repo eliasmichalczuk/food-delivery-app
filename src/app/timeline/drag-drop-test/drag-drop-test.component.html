@@ -2,11 +2,13 @@
 
 <h2>draggable directive, part 1</h2>
 
-<div class="box" appDraggable
-  (dragStart)="onDragStart()" (dragMove)="onDragMove($event)" (dragEnd)="onDragEnd()">
-  My box
-</div>
 <div class="box" appDraggableRx
   (dragStart)="onDragStart()" (dragMove)="onDragMove($event)" (dragEnd)="onDragEnd()">
   My box
+</div>
+
+<h2>movable directive, part 2</h2>
+
+<div class="box" appMovable>
+  Movable
 </div>

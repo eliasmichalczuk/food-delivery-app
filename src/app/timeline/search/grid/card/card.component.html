@@ -4,7 +4,14 @@
       <img src="assets/img/google-chrome.jpg" alt="logo" style="width: 100%; height: 100px;">
     </div> -->
     <div mat-card-avatar class="image"></div>
-    <mat-icon color="accent">star</mat-icon>
+    <div class="flex-box icons-position" style="">
+      <!-- <mat-card-title style="font-weight: bold; font-size: 14px; color: rgb(240, 243, 52)">{{card.rating}}</mat-card-title> -->
+      <mat-icon color="accent">star</mat-icon>
+      <button mat-mini-fab color="primary" (click)="changeState()" 
+        >
+        <mat-icon style="color: white" [@favButton]="currentState">archive</mat-icon>
+      </button>
+    </div>
     <mat-card-title style="font-weight: bold; color: #9b0d0d;">{{card.name}}</mat-card-title>
     <mat-card-subtitle>{{card.foodType}} ~ {{card.amount}}</mat-card-subtitle>
   </mat-card-header>

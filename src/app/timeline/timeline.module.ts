@@ -18,7 +18,9 @@ import { CardComponent } from './search/grid/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
 import { DraggableModule } from './drag-drop-test/draggable/draggable.module';
-
+import {MatMenuModule} from '@angular/material/menu';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent],
   imports: [
@@ -34,7 +36,10 @@ import { DraggableModule } from './drag-drop-test/draggable/draggable.module';
     FormsModule,
     MatGridListModule,
     HttpClientModule,
-    DraggableModule
+    DraggableModule,
+    MatMenuModule,
+    MatToolbarModule,
+    FlexLayoutModule
   ]
 })
 export class TimelineModule { }

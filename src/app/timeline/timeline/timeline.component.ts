@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop/index';
 import { Card } from 'src/app/dto/card.interface';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-timeline',
@@ -19,6 +20,10 @@ export class TimelineComponent implements OnInit {
   drop(event: CdkDragDrop<Card[]>) {
     this.favorites++;
     console.log('dropped')
+  }
+
+  prepareRoute(outlet: RouterOutlet) {
+    return outlet && outlet.activatedRoute && outlet.activatedRouteData['animation'];
   }
 
 }

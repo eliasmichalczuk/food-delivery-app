@@ -1,16 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TimelineComponent } from './timeline/timeline/timeline.component';
-import { TimelineModule } from './timeline/timeline.module';
-import { TimelineRoutingModule } from './timeline/timeline-routing.module';
 import { DragDropTestComponent } from './timeline/drag-drop-test/drag-drop-test.component';
 
 const routes: Routes = [
   {
-    path: '', component: TimelineComponent
+    path: '',
+    loadChildren: './timeline/timeline.module#TimelineModule'
   },
   {
-    path: 'dragdrop', component: DragDropTestComponent
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full'
   }
 ];
 

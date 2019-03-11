@@ -1,20 +1,25 @@
 import { Directive, HostListener, HostBinding } from '@angular/core';
 import { DraggableRxDirective } from './draggable-rx.directive';
 import { DraggableDirective } from './draggable.directive';
-import { DomSanitizer } from '@angular/platform-browser';
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
 import { Position } from '../position.interface';
 
 @Directive({
   selector: '[appMovable]'
 })
-export class MovableDirective{
+export class MovableDirective extends DraggableDirective{
 
-  @HostBinding('style.transform') get transform(): string {
-    return `translatex(${this.position.x}px) translateY(${this.position.y}px`;
+  @HostBinding('style.transform') get transform(): SafeStyle {
+    return this.sanitizer.bypassSecurityTrustStyle(
+      `translatex(${this.position.x}px) translateY(${this.position.y}px`);
   }
 
-  private position: Position = {x: 50, y: 0};
+  private position: Position = {x: 0, y: 0};
   private startPosition: Position;
+
+  constructor(private sanitizer: DomSanitizer) {
+    super();
+  }
 
   @HostListener('dragStart', ['$event'])
   onDragStart(event: PointerEvent) {

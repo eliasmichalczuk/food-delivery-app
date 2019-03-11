@@ -44,7 +44,9 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatToolbarModule,
     FlexLayoutModule,
     DragDropModule,
-    MatProgressBarModule
-  ]
+    MatProgressBarModule,
+    HttpClientModule
+  ],
+  providers: [HttpClientModule]
 })
 export class TimelineModule { }

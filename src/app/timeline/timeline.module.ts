@@ -23,9 +23,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { DiscoverComponent } from './discover/discover.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
-  declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent],
+  declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent, DiscoverComponent],
   imports: [
     CommonModule,
     TimelineRoutingModule,
@@ -38,7 +40,6 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     MatInputModule,
     FormsModule,
     MatGridListModule,
-    HttpClientModule,
     DraggableModule,
     MatMenuModule,
     MatToolbarModule,

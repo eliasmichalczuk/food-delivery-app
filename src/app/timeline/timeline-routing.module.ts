@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { TimelineComponent } from './timeline/timeline.component';
 import { SearchComponent } from './search/search.component';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
+import { DiscoverComponent } from './discover/discover.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,10 @@ const routes: Routes = [
       },
       {
         path: 'search', component: SearchComponent
+      },
+      {
+        path: 'discover', component: DiscoverComponent,
+        data: { animation: 'discover'}
       },
     ]
   },

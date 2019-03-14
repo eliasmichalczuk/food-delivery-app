@@ -15,16 +15,15 @@ export class GridComponent implements OnInit {
   @Input() cards: Array<Card> = [];
 
   ngOnInit() {
-    this.breakpoint = (window.innerWidth <= 890) ? 1 : 1;
+    this.breakpoint = (window.innerWidth <= 890) ? 1 : 2;
   }
 
   onResize(event) {
-    this.breakpoint = (event.target.innerWidth <= 890) ? 1 : 1;
+    this.breakpoint = (event.target.innerWidth <= 890) ? 1 : 2;
   }
   
   drop(event: CdkDragDrop<Card[]>) {
     moveItemInArray(this.cards, event.previousIndex, event.currentIndex);
-    console.log('new list', this.cards);
   }
 
 }

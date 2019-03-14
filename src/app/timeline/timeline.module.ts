@@ -1,31 +1,30 @@
-import { NgModule } from '@angular/core';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
-
-import { TimelineRoutingModule } from './timeline-routing.module';
-import { TimelineComponent } from './timeline/timeline.component';
-import { SearchComponent } from './search/search.component';
-import {MatButtonModule} from '@angular/material/button';
-import {MatCardModule} from '@angular/material/card';
-import {MatTabsModule} from '@angular/material/tabs';
-import {MatDialogModule} from '@angular/material/dialog';
-import {MatFormFieldModule} from '@angular/material/form-field';
-import {MatIconModule} from '@angular/material/icon';
-import {MatInputModule} from '@angular/material';
-import { FormsModule } from '@angular/forms';
-import { GridComponent } from './search/grid/grid.component';
-import {MatGridListModule} from '@angular/material/grid-list';
-import { CardComponent } from './search/grid/card/card.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatSelectModule } from '@angular/material/select';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RouterModule } from '@angular/router';
+import { DiscoverComponent } from './discover/discover.component';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
 import { DraggableModule } from './drag-drop-test/draggable/draggable.module';
-import {MatMenuModule} from '@angular/material/menu';
-import {MatToolbarModule} from '@angular/material/toolbar';
-import { FlexLayoutModule } from '@angular/flex-layout';
-import {DragDropModule} from '@angular/cdk/drag-drop';
-import {MatProgressBarModule} from '@angular/material/progress-bar';
-import { DiscoverComponent } from './discover/discover.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { RouterModule } from '@angular/router';
+import { CardComponent } from './search/grid/card/card.component';
+import { GridComponent } from './search/grid/grid.component';
+import { SearchComponent } from './search/search.component';
+import { TimelineRoutingModule } from './timeline-routing.module';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent, DiscoverComponent],
@@ -49,6 +48,9 @@ import { RouterModule } from '@angular/router';
     MatProgressBarModule,
     HttpClientModule,
     RouterModule,
+    MatSelectModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [HttpClientModule]
 })

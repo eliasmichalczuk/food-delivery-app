@@ -4,6 +4,7 @@ import { empty } from 'rxjs';
 import { Event } from '@angular/router';
 import { CardService } from '../services/card.service';
 import { Card } from 'src/app/dto/card.interface';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-search',
@@ -17,6 +18,9 @@ export class SearchComponent implements OnInit {
 
   cards: Array<Card> = [];
   loading = false;
+  foodTypes = new FormControl();
+  foodTypeList: string[] = ['Comida Brasileira', 'Comida Árabe', 'Comida Alemã', 'Laches', 'Marmita', 'Frutos do Mar',
+    'Pizza', 'Panquecas', 'Pastel', 'Bebidas'];
 
   set search(search: string) {
     if (search === '') {

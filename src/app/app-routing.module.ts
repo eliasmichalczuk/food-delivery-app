@@ -4,12 +4,12 @@ import { DragDropTestComponent } from './timeline/drag-drop-test/drag-drop-test.
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'timeline',
     loadChildren: './timeline/timeline.module#TimelineModule'
   },
   {
     path: '',
-    redirectTo: '',
+    redirectTo: 'timeline',
     pathMatch: 'full'
   }
 ];

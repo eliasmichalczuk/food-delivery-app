@@ -1,7 +1,8 @@
-<mat-grid-list [cols]="1" rowHeight="2:0.5" (window:resize)="onResize($event)"
+<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)"
  *ngIf="cards" class="grid-list">
-  <div cdkDropList class="drop-list" (cdkDropListDropped)="drop($event)"
-    id="grid-list" cdkDropListConnectedTo="header-list">
-    <app-card  *ngFor="let card of cards" cdkDrag [card]="card" class="dragging"></app-card>
+  <div *ngFor="let card of cards" >
+    <mat-grid-tile>
+      <app-card  [card]="card"></app-card>
+    </mat-grid-tile>
   </div>
 </mat-grid-list>

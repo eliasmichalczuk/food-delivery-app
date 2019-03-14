@@ -28,14 +28,13 @@ const routes: Routes = [
     path: 'dragdrop', component: DragDropTestComponent
   },
   {
-    path: 'timeline',
+    path: '',
     redirectTo: '/search',
     pathMatch: ''
   },
   {
     path: '**',
     redirectTo: '/search',
-    pathMatch: ''
   }
 ];
 

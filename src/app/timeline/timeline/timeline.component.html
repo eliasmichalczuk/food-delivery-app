@@ -9,10 +9,8 @@
   margin-left:auto;margin-right:auto;" class="alternate-theme">
     <div>
       <mat-icon svgIcon="home" color="accent"></mat-icon>
-      <button mat-flat-button class="button">
-          
-        Buscar</button>
-      <button mat-flat-button class="button">Descobrir</button>
+      <button mat-flat-button class="button" [routerLink]="['timeline/search']" routerLinkActive="active">Buscar</button>
+      <button mat-flat-button class="button" [routerLink]="['timeline/discover']" routerLinkActive="active">Descobrir</button>
       <button mat-flat-button class="button">Pedidos</button>
     </div>
   </div>

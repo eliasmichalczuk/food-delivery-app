@@ -1,8 +1,10 @@
-import { Component, OnInit, Input, HostBinding, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, HostBinding, ElementRef, HostListener } from '@angular/core';
 import { Card } from 'src/app/dto/card.interface';
 import { style, trigger, state, transition, animate } from '@angular/animations';
 import { timeout } from 'rxjs/operators';
 import { moveItemInArray } from '@angular/cdk/drag-drop';
+import { Router } from '@angular/router';
+import { slider, slideTo } from 'src/app/timeline/route-animations';
 
 @Component({
   selector: 'app-card',
@@ -19,15 +21,23 @@ import { moveItemInArray } from '@angular/cdk/drag-drop';
       })),
       transition('initial=>final', animate('200ms')),
       transition('final=>initial', animate('200ms 200ms'))
+    ]),
+    trigger('slider', [
+      transition('*=>*', slideTo('right'))
     ])
   ]
 })
-export class CardComponent implements OnInit {
+export class CardComponent {
 
   @Input() card: Card;
-  
+
+
   currentState = 'initial';
-  elementPosition = {x: 0, y: 0};
+  elementPosition = { x: 0, y: 0 };
+
+  constructor(
+    private router: Router
+  ) { }
 
   changeState() {
     if (this.currentState === 'final') {
@@ -38,8 +48,8 @@ export class CardComponent implements OnInit {
     setTimeout(() => this.changeState(), 200);
   }
 
-
-  ngOnInit() {
+  goToSearch() {
+    console.log('s')
+    this.router.navigate(['/search']);
   }
-
 }

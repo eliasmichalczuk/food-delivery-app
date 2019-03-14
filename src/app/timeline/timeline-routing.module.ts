@@ -15,11 +15,12 @@ const routes: Routes = [
         redirectTo: 'search'
       },
       {
-        path: 'search', component: SearchComponent
+        path: 'search', component: SearchComponent,
+        data: { animation: 'isLeft'}
       },
       {
         path: 'discover', component: DiscoverComponent,
-        data: { animation: 'discover'}
+        data: { animation: 'isLeft'}
       },
     ]
   },

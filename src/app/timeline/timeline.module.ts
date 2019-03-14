@@ -25,6 +25,7 @@ import {DragDropModule} from '@angular/cdk/drag-drop';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { DiscoverComponent } from './discover/discover.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent, DiscoverComponent],
@@ -46,7 +47,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FlexLayoutModule,
     DragDropModule,
     MatProgressBarModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule,
   ],
   providers: [HttpClientModule]
 })

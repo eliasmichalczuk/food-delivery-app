@@ -25,9 +25,18 @@ import { GridComponent } from './search/grid/grid.component';
 import { SearchComponent } from './search/search.component';
 import { TimelineRoutingModule } from './timeline-routing.module';
 import { TimelineComponent } from './timeline/timeline.component';
+import { WhatToFollowComponent } from './what-to-follow/what-to-follow.component';
 
 @NgModule({
-  declarations: [TimelineComponent, SearchComponent, GridComponent, CardComponent, DragDropTestComponent, DiscoverComponent],
+  declarations: [
+    TimelineComponent,
+    SearchComponent,
+    GridComponent,
+    CardComponent,
+    DragDropTestComponent,
+    DiscoverComponent,
+    WhatToFollowComponent
+  ],
   imports: [
     CommonModule,
     TimelineRoutingModule,
@@ -52,6 +61,7 @@ import { TimelineComponent } from './timeline/timeline.component';
     FormsModule,
     ReactiveFormsModule
   ],
+  exports: [WhatToFollowComponent],
   providers: [HttpClientModule]
 })
-export class TimelineModule { }
+export class TimelineModule {}

@@ -1,0 +1,22 @@
+<div class="shape">
+  <a mat-button style="right: 0px" (click)="refresh()">Refresh</a>
+  <div
+    *ngFor="let person of (result | async | slice: 0:3); let i = index"
+    class="container"
+    fxLayout="row"
+    fxLayoutWrap
+    fxLayoutGap="0.5%"
+    fxLayoutAlign="center"
+  >
+    <div fxFlex="20%">
+      <img mat-card-image class="img" [src]="person.avatar_url" />
+    </div>
+    <div fxFlex="80%">
+      <b>{{ person.login }}</b>
+      <mat-icon>follow</mat-icon>
+      <button mat-stroked-button style="right: 0px" (click)="followClick()">
+        Follow
+      </button>
+    </div>
+  </div>
+</div>

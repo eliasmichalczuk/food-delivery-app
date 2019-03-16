@@ -1,21 +1,43 @@
+<app-what-to-follow class="side-widget"></app-what-to-follow>
 <mat-toolbar color="primary" class="toolbar flex-container">
   <div class="">
-    <p>Bem vindo(a), <b> Usuário</b> Favorites counter <b>{{favorites}}</b></p>
+    <p>
+      Bem vindo(a), <b> Usuário</b> Favorites counter <b>{{ favorites }}</b>
+    </p>
   </div>
 </mat-toolbar>
 <div class="toolbar-2">
-  <div style="text-align: center; 
-  margin-left:auto;margin-right:auto;" class="alternate-theme">
+  <div
+    style="text-align: center; 
+  margin-left:auto;margin-right:auto;"
+    class="alternate-theme"
+  >
     <div>
       <mat-icon svgIcon="home" color="accent"></mat-icon>
-      <button mat-flat-button class="button" [routerLink]="['search']" routerLinkActive="active">Buscar</button>
-      <button mat-flat-button class="button" [routerLink]="['discover']" routerLinkActive="active">Descobrir</button>
+      <button
+        mat-flat-button
+        class="button"
+        [routerLink]="['search']"
+        routerLinkActive="active"
+      >
+        Buscar
+      </button>
+      <button
+        mat-flat-button
+        class="button"
+        [routerLink]="['discover']"
+        routerLinkActive="active"
+      >
+        Descobrir
+      </button>
       <button mat-flat-button class="button">Pedidos</button>
     </div>
   </div>
 </div>
-<div style="text-align: center; max-width: 900px; 
-margin-left:auto;margin-right:auto; margin-top: 125px">
+<div
+  style="text-align: center; max-width: 900px; 
+margin-left:auto;margin-right:auto; margin-top: 125px"
+>
   <main [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
   </main>

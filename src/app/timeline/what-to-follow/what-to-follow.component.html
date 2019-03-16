@@ -1,7 +1,7 @@
 <div class="shape">
   <a mat-button style="right: 0px" (click)="refresh()">Refresh</a>
   <div
-    *ngFor="let person of (result | async | slice: 0:3); let i = index"
+    *ngFor="let person of (result | slice: 0:3); let i = index"
     class="container"
     fxLayout="row"
     fxLayoutWrap
@@ -13,7 +13,7 @@
     </div>
     <div fxFlex="80%">
       <b>{{ person.login }}</b>
-      <b class="close-button" style="cursor: pointer" (click)="closeOption()"
+      <b class="close-button" style="cursor: pointer" (click)="closeOption(i)"
         >x</b
       >
       <button mat-stroked-button style="right: 0px" (click)="followClick()">

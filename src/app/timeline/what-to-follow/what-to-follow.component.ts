@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WhatToFollowComponent implements OnInit {
   _result = new BehaviorSubject<any>(null);
-  _response: Observable<any>;
+  _response: any;
   get result() {
     return this._response;
   }
@@ -25,21 +25,26 @@ export class WhatToFollowComponent implements OnInit {
   }
 
   demonstration() {
-    const randomOffiset = Math.random() * 500;
+    const randomOffset = Math.random() * 500;
     const request = this.http.get(`https://api.github.com/users`);
     const refreshRequest = this.http.get(
-      `https://api.github.com/users?since=${randomOffiset}`
+      `https://api.github.com/users?since=${randomOffset}`
     );
     return forkJoin(request, refreshRequest);
   }
 
-  refresh(): Observable<any> {
+  refresh() {
     this._response = null;
-    const response = this.followService.getWithOffset();
+    this.followService.getWithOffset().subscribe(res => {
+      this._response = res;
+    });
     // this._result.next(response);
     // this._result.next(null);
     // response.subscribe(res => console.log(res));
-    this._response = response;
-    return response;
+  }
+
+  closeOption(index: number) {
+    const randomOffset = Math.floor(Math.random() * this._response.length);
+    this._response[index] = this._response[randomOffset];
   }
 }

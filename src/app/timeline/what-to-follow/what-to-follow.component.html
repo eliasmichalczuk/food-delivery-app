@@ -13,8 +13,11 @@
     </div>
     <div fxFlex="80%">
       <b>{{ person.login }}</b>
-      <mat-icon>follow</mat-icon>
+      <b class="close-button" style="cursor: pointer" (click)="closeOption()"
+        >x</b
+      >
       <button mat-stroked-button style="right: 0px" (click)="followClick()">
+        <mat-icon>people</mat-icon>
         Follow
       </button>
     </div>

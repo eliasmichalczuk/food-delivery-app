@@ -11,8 +11,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WhatToFollowComponent implements OnInit {
   _result = new BehaviorSubject<any>(null);
+  _response: Observable<any>;
   get result() {
-    return this._result.asObservable();
+    return this._response;
   }
   constructor(
     private followService: WhatToFollowService,
@@ -20,9 +21,7 @@ export class WhatToFollowComponent implements OnInit {
   ) {}
 
   ngOnInit() {
-    this.refresh().subscribe(res => {
-      console.log(res);
-    });
+    this.refresh();
   }
 
   demonstration() {
@@ -31,14 +30,16 @@ export class WhatToFollowComponent implements OnInit {
     const refreshRequest = this.http.get(
       `https://api.github.com/users?since=${randomOffiset}`
     );
-    return merge(request, refreshRequest);
+    return forkJoin(request, refreshRequest);
   }
 
   refresh(): Observable<any> {
+    this._response = null;
     const response = this.followService.getWithOffset();
-    this._result.next(response);
-    this._result.next(null);
-    response.subscribe(res => console.log(res));
+    // this._result.next(response);
+    // this._result.next(null);
+    // response.subscribe(res => console.log(res));
+    this._response = response;
     return response;
   }
 }

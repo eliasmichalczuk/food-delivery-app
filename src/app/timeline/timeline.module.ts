@@ -24,20 +24,17 @@ import { CardComponent } from './search/grid/card/card.component';
 import { GridComponent } from './search/grid/grid.component';
 import { SearchComponent } from './search/search.component';
 import { TimelineRoutingModule } from './timeline-routing.module';
-import { TimelineComponent } from './timeline/timeline.component';
-import { WhatToFollowComponent } from './what-to-follow/what-to-follow.component';
 import { MiddleClickDirective } from '../shared/directives/middle-click.directive';
 import { MouseMoveDirective } from '../shared/directives/mouse-move.directive';
+import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
-    TimelineComponent,
     SearchComponent,
     GridComponent,
     CardComponent,
     DragDropTestComponent,
     DiscoverComponent,
-    WhatToFollowComponent,
     MiddleClickDirective,
     MouseMoveDirective
   ],
@@ -63,9 +60,10 @@ import { MouseMoveDirective } from '../shared/directives/mouse-move.directive';
     RouterModule,
     MatSelectModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    SharedModule
   ],
-  exports: [WhatToFollowComponent],
+  exports: [],
   providers: [HttpClientModule]
 })
 export class TimelineModule {}

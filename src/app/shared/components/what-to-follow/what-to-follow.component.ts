@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable, forkJoin, Subject, BehaviorSubject } from 'rxjs';
-import { WhatToFollowService } from '../services/what-to-follow.service';
 import { takeUntil, mergeMap, merge } from 'rxjs/operators';
 import { HttpClient } from '@angular/common/http';
+import { WhatToFollowService } from 'src/app/timeline/services/what-to-follow.service';
 
 @Component({
   selector: 'app-what-to-follow',

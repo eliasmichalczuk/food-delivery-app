@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { TimelineComponent } from './timeline/timeline.component';
 import { SearchComponent } from './search/search.component';
 import { DragDropTestComponent } from './drag-drop-test/drag-drop-test.component';
 import { DiscoverComponent } from './discover/discover.component';
+import { TimelineComponent } from '../shared/components/timeline/timeline.component';
 
 const routes: Routes = [
   {
-    path: '', component: TimelineComponent,
+    path: '',
+    component: TimelineComponent,
     children: [
       {
         path: '',
@@ -15,17 +16,20 @@ const routes: Routes = [
         redirectTo: 'search'
       },
       {
-        path: 'search', component: SearchComponent,
-        data: { animation: 'isLeft'}
+        path: 'search',
+        component: SearchComponent,
+        data: { animation: 'isLeft' }
       },
       {
-        path: 'discover', component: DiscoverComponent,
-        data: { animation: 'isLeft'}
-      },
+        path: 'discover',
+        component: DiscoverComponent,
+        data: { animation: 'isLeft' }
+      }
     ]
   },
   {
-    path: 'dragdrop', component: DragDropTestComponent
+    path: 'dragdrop',
+    component: DragDropTestComponent
   },
   {
     path: '',
@@ -34,7 +38,7 @@ const routes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/search',
+    redirectTo: '/search'
   }
 ];
 
@@ -42,4 +46,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class TimelineRoutingModule { }
+export class TimelineRoutingModule {}

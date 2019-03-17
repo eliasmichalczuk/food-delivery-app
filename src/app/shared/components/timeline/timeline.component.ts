@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop/index';
 import { Card } from 'src/app/dto/card.interface';
 import { RouterOutlet, Router } from '@angular/router';
-import { fader, slider } from '../route-animations';
+import { slider } from 'src/app/timeline/route-animations';
 
 @Component({
   selector: 'app-timeline',

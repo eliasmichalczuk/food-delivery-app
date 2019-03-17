@@ -8,6 +8,10 @@ const routes: Routes = [
     loadChildren: './timeline/timeline.module#TimelineModule'
   },
   {
+    path: 'delivery',
+    loadChildren: './delivery/delivery.module#DeliveryModule'
+  },
+  {
     path: '',
     redirectTo: 'timeline',
     pathMatch: 'full'
@@ -18,4 +22,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

@@ -1,11 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DeliveryComponent } from './delivery.component';
-import { TimelineComponent } from '../timeline/timeline/timeline.component';
-import { TimelineRoutingModule } from '../timeline/timeline-routing.module';
+import { SharedModule } from '../shared/shared.module';
+import { DeliveryRoutingModule } from './delivery-routing.module';
+import { MealsComponent } from './meals/meals.component';
 
 @NgModule({
-  declarations: [DeliveryComponent],
-  imports: [CommonModule, TimelineRoutingModule]
+  declarations: [DeliveryComponent, MealsComponent],
+  imports: [CommonModule, DeliveryRoutingModule, SharedModule]
 })
 export class DeliveryModule {}

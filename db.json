@@ -1,406 +1,445 @@
 {
-    "author": [
+  "author": [
     {
-        "id": 1,
-        "age": 16,
-        "name": "Andy"
-      },
-      {
-        "id": 2,
-        "age": 22,
-        "name": "Lisa"
-      }
-    ],
-    "card": [
-      {
-        "id": 2,
-        "name": "Louro josé",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 3,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 4,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Nilson gonçalves",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      },
-      {
-        "id": 1,
-        "name": "Buteco do zeca",
-        "foodType": "Lanches",
-        "amount": "$",
-        "rating": 4.5,
-        "diatance": 12,
-        "time": [35, 45]
-      }
-    ],
+      "id": 1,
+      "age": 16,
+      "name": "Andy"
+    },
+    {
+      "id": 2,
+      "age": 22,
+      "name": "Lisa"
+    }
+  ],
+  "option": [
+    {
+      "id": 1,
+      "plateId": 1,
+      "description": "Macarrão com bolho bolonhesa",
+      "name": "Macarrão tradicional caseiro",
+      "price": "17,90"
+    },
+    {
+      "id": 1,
+      "plateId": 1,
+      "description": "Macarrão integral com bolho bolonhesa diferenciado",
+      "name": "Macarrão integral caseiro",
+      "price": "17,90"
+    }
+  ],
+  "group": [
+    {
+      "id": 1,
+      "name": "Macarrão tradicional"
+    }
+  ],
+  "plate": [
+    {
+      "id": 1,
+      "groupId": 1,
+      "name": "Macarrão tradicional caseiro",
+      "price": "17,90"
+    }
+  ],
+  "restaurant": [
+    {
+      "id": 1,
+      "name": "Louro josé",
+      "foodType": "Lanches",
+      "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk"
+    }
+  ],
+  "card": [
+    {
+      "id": 2,
+      "restaurantId": 1,
+      "name": "Louro josé",
+      "foodType": "Comida Brasileira",
+      "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk",
+      "deliveryCharge": "8,50",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 3,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 4,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Nilson gonçalves",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    },
+    {
+      "id": 1,
+      "name": "Buteco do zeca",
+      "foodType": "Lanches",
+      "amount": "$",
+      "rating": 4.5,
+      "distance": 12,
+      "time": [35, 45]
+    }
+  ],
 
-    "comments": [
-      {
-        "id": 1,
-        "postId": 1,
-        "date": "03-18-2016",
-        "message": "Nice!"
-      },
-      {
-        "id": 2,
-        "postId": 1,
-        "date": "06-21-2017",
-        "message": "Great view!"
-      },
-      {
-        "id": 3,
-        "postId": 1,
-        "date": "01-01-2018",
-        "message": "very good angle!"
-      },
-      {
-        "id": 4,
-        "postId": 1,
-        "date": "1-29-2019",
-        "message": "test"
-      },
-      {
-        "id": 5,
-        "postId": 1,
-        "date": "1-29-2019",
-        "message": "qdqwdqdw"
-      },
-      {
-        "id": 6,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "comment"
-      },
-      {
-        "id": 7,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "test"
-      },
-      {
-        "id": 8,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "new c"
-      },
-      {
-        "id": 9,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "ddd"
-      },
-      {
-        "id": 10,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "test"
-      },
-      {
-        "id": 11,
-        "postId": 3,
-        "date": "1-29-2019",
-        "message": "test"
-      }
-    ],
-    "posts": [
-      {
-        "id": 1,
-        "authorName": "Lisa",
-        "authorId": 2,
-        "description": "A wonderful view of nature",
-        "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
-        "title": "A natural view"
-      },
-      {
-        "id": 2,
-        "authorName": "Andy",
-        "authorId": 1,
-        "description": "Seaside sunset",
-        "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
-        "title": "Landscape view"
-      },
-      {
-        "id": 3,
-        "authorName": "Andy",
-        "authorId": 1,
-        "description": "a post about something",
-        "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
-        "title": "ionic title"
-      }
-    ],
-    "favorites": [
-      {
-        "postIds": [
-          1
-        ]
-      }
-    ]
-  }
+  "comments": [
+    {
+      "id": 1,
+      "postId": 1,
+      "date": "03-18-2016",
+      "message": "Nice!"
+    },
+    {
+      "id": 2,
+      "postId": 1,
+      "date": "06-21-2017",
+      "message": "Great view!"
+    },
+    {
+      "id": 3,
+      "postId": 1,
+      "date": "01-01-2018",
+      "message": "very good angle!"
+    },
+    {
+      "id": 4,
+      "postId": 1,
+      "date": "1-29-2019",
+      "message": "test"
+    },
+    {
+      "id": 5,
+      "postId": 1,
+      "date": "1-29-2019",
+      "message": "qdqwdqdw"
+    },
+    {
+      "id": 6,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "comment"
+    },
+    {
+      "id": 7,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "test"
+    },
+    {
+      "id": 8,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "new c"
+    },
+    {
+      "id": 9,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "ddd"
+    },
+    {
+      "id": 10,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "test"
+    },
+    {
+      "id": 11,
+      "postId": 3,
+      "date": "1-29-2019",
+      "message": "test"
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "authorName": "Lisa",
+      "authorId": 2,
+      "description": "A wonderful view of nature",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "A natural view"
+    },
+    {
+      "id": 2,
+      "authorName": "Andy",
+      "authorId": 1,
+      "description": "Seaside sunset",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "Landscape view"
+    },
+    {
+      "id": 3,
+      "authorName": "Andy",
+      "authorId": 1,
+      "description": "a post about something",
+      "img": "https://d2lm6fxwu08ot6.cloudfront.net/img-thumbs/960w/8V46UZCS0V.jpg",
+      "title": "ionic title"
+    }
+  ],
+  "favorites": [
+    {
+      "postIds": [1]
+    }
+  ]
+}

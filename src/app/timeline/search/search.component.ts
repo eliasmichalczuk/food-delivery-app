@@ -40,36 +40,6 @@ export class SearchComponent implements OnInit {
     'Bebidas'
   ];
 
-  _isGradientVisible = false;
-  _gradientTop: number;
-  _gradientLeft: number;
-  _gradientRadius: number;
-
-  positionTop(event: number) {
-    this._gradientTop = event;
-  }
-
-  positionLeft(event: number) {
-    this._gradientLeft = event;
-  }
-
-  gradientRadius(event: number) {
-    this._gradientRadius = event;
-  }
-
-  set isGradientVisible(value: boolean) {
-    this._isGradientVisible = value;
-  }
-
-  getGradientStyle() {
-    const gradientRedius = this._isGradientVisible ? this._gradientRadius : 0;
-    return {
-      'height.px': gradientRedius,
-      'width.px': gradientRedius,
-      'top.px': this._gradientTop,
-      'left.px': this._gradientLeft
-    };
-  }
   set search(search: string) {
     if (search === '') {
       this.getCardsNoQueryFilter();

@@ -28,26 +28,9 @@
 </div>
 <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
 <app-grid [cards]="cards" [animationState]="change"></app-grid>
-<div
-  class="container"
-  fxLayout="row"
-  fxLayoutWrap
-  fxLayoutGap="0%"
-  fxLayoutAlign="center"
->
+<div fxLayout="row" fxLayoutWrap fxLayoutGap="0%" fxLayoutAlign="center">
   <div fxFlex="10%">
-    <button
-      class="gradient"
-      mat-stroked-button
-      color="primary"
-      (click)="previousPage()"
-      appMouseMove
-      (gradientTop)="positionTop($event)"
-      (gradientLeft)="positionLeft($event)"
-      (isGradientVisible)="positionTop($event)"
-      (gradientRadius)="gradientRadius($event)"
-      [ngStyle]="gradientStyle"
-    >
+    <button mat-stroked-button color="primary" (click)="previousPage()">
       Prev
     </button>
   </div>

@@ -8,19 +8,14 @@ import { fader, slider } from '../route-animations';
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
   styleUrls: ['./timeline.component.sass'],
-  animations: [
-    slider
-  ]
+  animations: [slider]
 })
 export class TimelineComponent implements OnInit {
-
   favorites = 0;
 
-  constructor(
-    private router: Router) { }
+  constructor(private router: Router) {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   drop(event: CdkDragDrop<Card[]>) {
     this.favorites++;
@@ -28,10 +23,10 @@ export class TimelineComponent implements OnInit {
   }
 
   prepareRoute(outlet: RouterOutlet) {
-    return outlet && outlet.activatedRoute && outlet.activatedRouteData['animation'];
+    return (
+      outlet && outlet.activatedRoute && outlet.activatedRouteData['animation']
+    );
   }
 
-  goToSearch() {
-    
-  }
+  goToSearch() {}
 }

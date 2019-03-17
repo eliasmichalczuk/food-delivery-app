@@ -1,8 +1,13 @@
-<mat-grid-list [cols]="breakpoint" rowHeight="2:0.5" (window:resize)="onResize($event)"
- *ngIf="cards" class="grid-list">
-  <div *ngFor="let card of cards" >
-    <mat-grid-tile>
-      <app-card  [card]="card"></app-card>
+<mat-grid-list
+  [cols]="breakpoint"
+  rowHeight="2:0.5"
+  (window:resize)="onResize($event)"
+  *ngIf="cards"
+  class="grid-list"
+>
+  <div *ngFor="let card of cards">
+    <mat-grid-tile [@moverAnimation]="animationState">
+      <app-card [card]="card"></app-card>
     </mat-grid-tile>
   </div>
 </mat-grid-list>

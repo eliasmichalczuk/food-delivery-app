@@ -7,8 +7,8 @@ import { Observable } from 'rxjs';
 })
 export class WhatToFollowService {
   getWithOffset(): Observable<any> {
-    const randomOffiset = Math.random() * 500;
-    return this.http.get(`https://api.github.com/users?since=${randomOffiset}`);
+    const randomOffset = Math.random() * 500;
+    return this.http.get(`https://api.github.com/users?since=${randomOffset}`);
   }
 
   get(): Observable<any> {

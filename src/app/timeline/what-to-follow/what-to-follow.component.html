@@ -1,5 +1,5 @@
 <div class="shape">
-  <a mat-button style="right: 0px" (click)="refresh()">Refresh</a>
+  <a mat-button (click)="refresh()">Refresh</a>
   <div
     *ngFor="let person of (result | slice: 0:3); let i = index"
     class="container"
@@ -12,11 +12,20 @@
       <img mat-card-image class="img" [src]="person.avatar_url" />
     </div>
     <div fxFlex="80%">
-      <b>{{ person.login }}</b>
-      <b class="close-button" style="cursor: pointer" (click)="closeOption(i)"
-        >x</b
+      <b style="cursor: pointer" (click)="redirectExternal(person.login)">{{
+        person.login
+      }}</b>
+      <div>
+        <b class="close-button" style="cursor: pointer" (click)="closeOption(i)"
+          >x</b
+        >
+      </div>
+      <button
+        mat-stroked-button
+        style="right: 0px"
+        (appMiddleClick)="followClick()"
+        (click)="followClick()"
       >
-      <button mat-stroked-button style="right: 0px" (click)="followClick()">
         <mat-icon>people</mat-icon>
         Follow
       </button>

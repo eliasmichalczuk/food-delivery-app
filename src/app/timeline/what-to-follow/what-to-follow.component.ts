@@ -47,4 +47,8 @@ export class WhatToFollowComponent implements OnInit {
     const randomOffset = Math.floor(Math.random() * this._response.length);
     this._response[index] = this._response[randomOffset];
   }
+
+  redirectExternal(login: string) {
+    window.open(`http://www.github.com/${login}`);
+  }
 }

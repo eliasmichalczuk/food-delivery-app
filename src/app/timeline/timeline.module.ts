@@ -26,6 +26,7 @@ import { SearchComponent } from './search/search.component';
 import { TimelineRoutingModule } from './timeline-routing.module';
 import { TimelineComponent } from './timeline/timeline.component';
 import { WhatToFollowComponent } from './what-to-follow/what-to-follow.component';
+import { MiddleClickDirective } from '../shared/directives/middle-click.directive';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { WhatToFollowComponent } from './what-to-follow/what-to-follow.component
     CardComponent,
     DragDropTestComponent,
     DiscoverComponent,
-    WhatToFollowComponent
+    WhatToFollowComponent,
+    MiddleClickDirective
   ],
   imports: [
     CommonModule,

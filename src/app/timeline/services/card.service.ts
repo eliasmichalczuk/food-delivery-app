@@ -6,16 +6,20 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class CardService {
-
-  constructor(
-    private httpclient: HttpClient
-  ) { }
+  constructor(private httpclient: HttpClient) {}
 
   getCardsNoQueryFilter(page: number) {
-    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20`);
+    return this.httpclient.get(
+      environment.connection + '/card?' + '_page=' + `${page}&_limit=10`
+    );
   }
 
   getCardsQueryFilter(page: number, query: string) {
-    return this.httpclient.get(environment.connection + '/card?' + '_page=' + `${page}&_limit=20?&name_like=${query}`);
+    return this.httpclient.get(
+      environment.connection +
+        '/card?' +
+        '_page=' +
+        `${page}&_limit=10?&name_like=${query}`
+    );
   }
 }

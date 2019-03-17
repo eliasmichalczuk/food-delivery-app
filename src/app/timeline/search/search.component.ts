@@ -38,7 +38,6 @@ export class SearchComponent implements OnInit {
     'Pastel',
     'Bebidas'
   ];
-
   set search(search: string) {
     if (search === '') {
       this.getCardsNoQueryFilter();

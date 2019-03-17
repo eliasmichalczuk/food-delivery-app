@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { Card } from 'src/app/dto/card.interface';
 import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
-import { slider, componentSlider } from '../../route-animations';
+import { slider } from '../../route-animations';
 import {
   style,
   trigger,
@@ -50,28 +50,12 @@ import {
     ])
   ]
 })
-export class GridComponent implements OnInit, OnChanges {
+export class GridComponent implements OnInit {
   constructor() {}
 
   breakpoint: number;
   @Input() cards: Array<Card> = [];
   @Input() animationState = 'middle';
-
-  ngOnChanges(changes: SimpleChanges) {
-    if (this.cards.length) {
-      return;
-    }
-    if (changes.cards) {
-      setTimeout(() => {
-        this.animationState = 'final';
-      }, 200);
-      this.animationState = 'initial';
-      this.cards = <Array<Card>>(<unknown>changes.cards);
-      setTimeout(() => {
-        this.animationState = 'middle';
-      }, 200);
-    }
-  }
 
   ngOnInit() {
     this.breakpoint = window.innerWidth <= 890 ? 1 : 2;

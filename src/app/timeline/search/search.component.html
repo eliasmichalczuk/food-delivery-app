@@ -17,12 +17,12 @@
         {{ foodTypes.value ? foodTypes.value[0] : '' }}
         <span *ngIf="foodTypes.value?.length > 1" class="selecao-multipla">
           (+{{ foodTypes.value.length - 1 }}
-          {{ foodTypes.value?.length === 2 ? 'other' : 'others' }})
+          {{ foodTypes.value?.length === 2 ? 'outro' : 'outros' }})
         </span>
       </mat-select-trigger>
-      <mat-option *ngFor="let foodType of FoodTypeList" [value]="foodType">
-        {{ foodType }}
-      </mat-option>
+      <mat-option *ngFor="let foodType of foodTypeList" [value]="foodType">{{
+        foodType
+      }}</mat-option>
     </mat-select>
   </mat-form-field>
 </div>

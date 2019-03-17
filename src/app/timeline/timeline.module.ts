@@ -27,6 +27,7 @@ import { TimelineRoutingModule } from './timeline-routing.module';
 import { TimelineComponent } from './timeline/timeline.component';
 import { WhatToFollowComponent } from './what-to-follow/what-to-follow.component';
 import { MiddleClickDirective } from '../shared/directives/middle-click.directive';
+import { MouseMoveDirective } from '../shared/directives/mouse-move.directive';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MiddleClickDirective } from '../shared/directives/middle-click.directiv
     DragDropTestComponent,
     DiscoverComponent,
     WhatToFollowComponent,
-    MiddleClickDirective
+    MiddleClickDirective,
+    MouseMoveDirective
   ],
   imports: [
     CommonModule,

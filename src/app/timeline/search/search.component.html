@@ -36,7 +36,18 @@
   fxLayoutAlign="center"
 >
   <div fxFlex="10%">
-    <button mat-stroked-button color="primary" (click)="previousPage()">
+    <button
+      class="gradient"
+      mat-stroked-button
+      color="primary"
+      (click)="previousPage()"
+      appMouseMove
+      (gradientTop)="positionTop($event)"
+      (gradientLeft)="positionLeft($event)"
+      (isGradientVisible)="positionTop($event)"
+      (gradientRadius)="gradientRadius($event)"
+      [ngStyle]="gradientStyle"
+    >
       Prev
     </button>
   </div>

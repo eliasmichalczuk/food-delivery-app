@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MouseMoveDirective } from './shared/directives/mouse-move.directive';
 
 @NgModule({
   declarations: [AppComponent],

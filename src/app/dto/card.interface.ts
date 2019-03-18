@@ -1,9 +1,12 @@
 export interface Card {
-    id: number;
-    name: string;
-    foodType: string;
-    amount: string;
-    rating: number;
-    distance: number;
-    time: Array<number>
+  id: number;
+  restaurantId: number;
+  name: string;
+  foodType: string;
+  description: string;
+  deliveryCharge: number;
+  amount: string;
+  rating: number;
+  distance: number;
+  time: Array<number>;
 }

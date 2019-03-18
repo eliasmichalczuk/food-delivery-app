@@ -9,6 +9,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MouseMoveDirective } from './shared/directives/mouse-move.directive';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [AppComponent],
@@ -20,7 +21,8 @@ import { MouseMoveDirective } from './shared/directives/mouse-move.directive';
     MatMenuModule,
     MatIconModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

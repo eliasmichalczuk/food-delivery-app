@@ -1,4 +1,3 @@
-<app-what-to-follow class="side-widget"></app-what-to-follow>
 <mat-toolbar color="primary" class="toolbar flex-container">
   <div class="">
     <p>
@@ -17,7 +16,7 @@
       <button
         mat-flat-button
         class="button"
-        [routerLink]="['search']"
+        [routerLink]="['/timeline/search']"
         routerLinkActive="active"
       >
         Buscar
@@ -25,7 +24,7 @@
       <button
         mat-flat-button
         class="button"
-        [routerLink]="['discover']"
+        [routerLink]="['/timeline/discover']"
         routerLinkActive="active"
       >
         Descobrir
@@ -34,11 +33,8 @@
     </div>
   </div>
 </div>
-<div
-  style="text-align: center; max-width: 900px; 
-margin-left:auto;margin-right:auto; margin-top: 125px"
->
-  <main [@routeAnimations]="prepareRoute(outlet)">
+<div>
+  <div [@routeAnimations]="prepareRoute(outlet)">
     <router-outlet #outlet="outlet"></router-outlet>
-  </main>
+  </div>
 </div>

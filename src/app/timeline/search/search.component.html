@@ -1,42 +1,55 @@
-<div class="search-container">
-  <mat-form-field color="warn" style="min-width: 50%; font-size: 16px">
-    <input
-      matInput
-      name="myInput"
-      [(ngModel)]="search"
-      (keydown.enter)="onEnterKey($event)"
-      placeholder="Search for a restaurant or food"
-    />
-    <mat-icon matSuffix>search</mat-icon>
-  </mat-form-field>
-</div>
-<div>
-  <mat-form-field>
-    <mat-select placeholder="Cozinha" [formControl]="foodTypes" multiple>
-      <mat-select-trigger>
-        {{ foodTypes.value ? foodTypes.value[0] : '' }}
-        <span *ngIf="foodTypes.value?.length > 1" class="selecao-multipla">
-          (+{{ foodTypes.value.length - 1 }}
-          {{ foodTypes.value?.length === 2 ? 'outro' : 'outros' }})
-        </span>
-      </mat-select-trigger>
-      <mat-option *ngFor="let foodType of foodTypeList" [value]="foodType">{{
-        foodType
-      }}</mat-option>
-    </mat-select>
-  </mat-form-field>
-</div>
-<mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
-<app-grid [cards]="cards" [animationState]="change"></app-grid>
-<div fxLayout="row" fxLayoutWrap fxLayoutGap="0%" fxLayoutAlign="center">
-  <div fxFlex="10%">
-    <button mat-stroked-button color="primary" (click)="previousPage()">
-      Prev
-    </button>
+<app-what-to-follow class="side-widget"></app-what-to-follow>
+<div
+  class="container"
+  fxLayout="column"
+  fxLayoutWrap
+  fxLayoutGap="0.5%"
+  fxLayoutAlign="center"
+>
+  <div class="search-container">
+    <mat-form-field color="warn" style="min-width: 50%; font-size: 16px">
+      <input
+        matInput
+        name="myInput"
+        [(ngModel)]="search"
+        (keydown.enter)="onEnterKey($event)"
+        placeholder="Search for a restaurant or food"
+      />
+      <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
   </div>
-  <div fxFlex="10%">
-    <button mat-stroked-button color="primary" (click)="nextPage()">
-      Next
-    </button>
+  <div class="card-loadBar-button-center" div fxFlex="80%">
+    <div>
+      <mat-form-field>
+        <mat-select placeholder="Cozinha" [formControl]="foodTypes" multiple>
+          <mat-select-trigger>
+            {{ foodTypes.value ? foodTypes.value[0] : '' }}
+            <span *ngIf="foodTypes.value?.length > 1" class="selecao-multipla">
+              (+{{ foodTypes.value.length - 1 }}
+              {{ foodTypes.value?.length === 2 ? 'outro' : 'outros' }})
+            </span>
+          </mat-select-trigger>
+          <mat-option
+            *ngFor="let foodType of foodTypeList"
+            [value]="foodType"
+            >{{ foodType }}</mat-option
+          >
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <mat-progress-bar *ngIf="loading" mode="indeterminate"></mat-progress-bar>
+    <app-grid [cards]="cards" [animationState]="change"></app-grid>
+    <div fxLayout="row" fxLayoutWrap fxLayoutGap="0%" fxLayoutAlign="center">
+      <div fxFlex="10%">
+        <button mat-stroked-button color="primary" (click)="previousPage()">
+          Prev
+        </button>
+      </div>
+      <div fxFlex="10%">
+        <button mat-stroked-button color="primary" (click)="nextPage()">
+          Next
+        </button>
+      </div>
+    </div>
   </div>
 </div>

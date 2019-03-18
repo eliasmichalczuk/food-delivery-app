@@ -38,7 +38,7 @@
       "id": 1,
       "groupId": 1,
       "name": "Macarrão tradicional caseiro",
-      "price": "17,90"
+      "price": 17.9
     }
   ],
   "restaurant": [
@@ -52,11 +52,11 @@
   "card": [
     {
       "id": 2,
-      "restaurantId": 1,
       "name": "Louro josé",
       "foodType": "Comida Brasileira",
+      "restaurantId": 1,
       "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk",
-      "deliveryCharge": "8,50",
+      "deliveryCharge": 8.5,
       "amount": "$",
       "rating": 4.5,
       "distance": 12,
@@ -66,6 +66,9 @@
       "id": 3,
       "name": "Buteco do zeca",
       "foodType": "Lanches",
+      "restaurantId": 0,
+      "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk",
+      "deliveryCharge": 8.5,
       "amount": "$",
       "rating": 4.5,
       "distance": 12,
@@ -75,6 +78,9 @@
       "id": 4,
       "name": "Buteco do zeca",
       "foodType": "Lanches",
+      "restaurantId": 0,
+      "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk",
+      "deliveryCharge": 8.5,
       "amount": "$",
       "rating": 4.5,
       "distance": 12,
@@ -84,6 +90,9 @@
       "id": 1,
       "name": "Buteco do zeca",
       "foodType": "Lanches",
+      "restaurantId": 0,
+      "description": "O melhor restaurante de comida caseira brasileira de joinvile, confirmado por Luciano Hulk",
+      "deliveryCharge": 8.5,
       "amount": "$",
       "rating": 4.5,
       "distance": 12,

@@ -9,9 +9,9 @@ import {
 import { mixinHasStickyInput } from '@angular/cdk/table';
 import { empty } from 'rxjs';
 import { Event } from '@angular/router';
-import { CardService } from '../services/card.service';
 import { Card } from 'src/app/dto/card.interface';
 import { FormControl } from '@angular/forms';
+import { CardService } from 'src/app/shared/services/card.service';
 
 @Component({
   selector: 'app-search',

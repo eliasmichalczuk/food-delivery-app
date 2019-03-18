@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CardService } from 'src/app/shared/services/card.service';
 
 @Component({
   selector: 'app-meals',
@@ -6,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./meals.component.sass']
 })
 export class MealsComponent implements OnInit {
+  constructor(private cardService: CardService) {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }

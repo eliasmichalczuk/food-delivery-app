@@ -1,9 +1,14 @@
-<mat-card (click)="goToSearch()" style="cursor: pointer">
+<mat-card (click)="goToMealsPage()" style="cursor: pointer">
   <mat-card-header>
     <div mat-card-avatar class="image"></div>
     <div class="flex-box icons-position">
       <mat-icon color="accent">star</mat-icon>
-      <button mat-mini-fab color="primary" (click)="changeState()">
+      <button
+        mat-mini-fab
+        color="primary"
+        (click)="changeState()"
+        class="z-index"
+      >
         <mat-icon style="color: white" [@favButton]="currentState"
           >archive</mat-icon
         >

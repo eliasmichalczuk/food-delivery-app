@@ -60,8 +60,9 @@ export class CardComponent {
     setTimeout(() => this.changeState(), 200);
   }
 
-  goToSearch() {
-    console.log('s');
-    this.router.navigate(['/search']);
+  goToMealsPage() {
+    this.router.navigateByUrl('/delivery/meals', {
+      queryParams: { id: this.card.id }
+    });
   }
 }

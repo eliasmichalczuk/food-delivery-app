@@ -1,11 +1,5 @@
 <div class="main">
-  <div
-    fxLayout.gt-md="row"
-    fxLayout.lt-sm="column"
-    fxLayoutGap="10px"
-    fxFlex="100"
-    fxLayoutAlign="center center"
-  >
+  <div fxLayout.gt-md="column" fxLayout.lt-sm="column" fxLayoutGap="10px" fxFlex="100" fxLayoutAlign="center center">
     <div fxFlex.lt-xl="50" fxFlex.lt-md="100" fxFlex.lt-sm="100">
       <div class="align-left">
         <h1>Louro José - Joinville</h1>
@@ -17,17 +11,32 @@
         </p>
         <p>Comida Chinesa • 50-60 min • 4.40 km • $$$</p>
       </div>
+      <div xFlex.lt-md="100">
+        <mat-form-field>
+          <mat-label>
+            <b>Promoções</b>
+          </mat-label>
+          <mat-select>
+            <mat-option *ngFor="let option of options; let index = i" [value]="option.name">{{option.name}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <mat-form-field color="warn" style="min-width: 50%; font-size: 16px">
+            <input
+              matInput
+              name="myInput"
+              placeholder="Search for a restaurant or food"
+            />
+            <mat-icon matSuffix>search</mat-icon>
+          </mat-form-field>
+      </div>
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Shiba Inu</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+          alt="Photo of a Shiba Inu" />
         <mat-card-content>
           <p>
             The Shiba Inu is the smallest of the six original and distinct spitz
@@ -40,18 +49,15 @@
         </mat-card-actions>
       </mat-card>
     </div>
-    <div fxFlex.lt-md="0" fxFlex.lt-sm="0" fxFlex.lt-xl="22" fxFlex.lt-lg="22">
+    <div fxFlex.lt-xl="22" fxFlex.lt-md="0" fxFlex.lt-sm="0" fxFlex.lt-lg="22">
       <mat-card class="example-card">
         <mat-card-header>
           <div mat-card-avatar class="example-header-image"></div>
           <mat-card-title>Shiba Inu</mat-card-title>
           <mat-card-subtitle>Dog Breed</mat-card-subtitle>
         </mat-card-header>
-        <img
-          mat-card-image
-          src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu"
-        />
+        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+          alt="Photo of a Shiba Inu" />
         <mat-card-content>
           <p>
             The Shiba Inu is the smallest of the six original and distinct spitz

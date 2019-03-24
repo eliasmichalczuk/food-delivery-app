@@ -22,4 +22,8 @@ export class CardService {
         `${page}&_limit=10?&name_like=${query}`
     );
   }
+
+  getCard(cardId: number) {
+    return this.httpclient.get(environment.connection + `/card/${cardId}`);
+  }
 }

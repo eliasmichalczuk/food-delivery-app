@@ -61,8 +61,6 @@ export class CardComponent {
   }
 
   goToMealsPage() {
-    this.router.navigateByUrl('/delivery/meals', {
-      queryParams: { id: this.card.id }
-    });
+    this.router.navigate(['/delivery/meals', { id: this.card.id }]);
   }
 }

@@ -1,26 +1,32 @@
 <div class="main">
-  <div fxLayout.gt-md="column" fxLayout.lt-sm="column" fxLayoutGap="10px" fxFlex="100" fxLayoutAlign="center center">
-    <div fxFlex.lt-xl="50" fxFlex.lt-md="100" fxFlex.lt-sm="100">
-      <div class="align-left">
-        <h1>Louro José - Joinville</h1>
-        <p>
-          China in Box o maior delivery de comida chinesa entrega pratos feitos
-          na hora do seu pedido, na caixinha mais conhecida do Brasil. Pratos
-          tradicionais como yakissoba, frango xadrez, rolinho primavera e banana
-          caramelada para pedir on-line. Peça agora
-        </p>
-        <p>Comida Chinesa • 50-60 min • 4.40 km • $$$</p>
-      </div>
-      <div xFlex.lt-md="100">
-        <mat-form-field>
-          <mat-label>
-            <b>Promoções</b>
-          </mat-label>
-          <mat-select>
-            <mat-option *ngFor="let option of options; let index = i" [value]="option.name">{{option.name}}</mat-option>
-          </mat-select>
-        </mat-form-field>
-        <mat-form-field color="warn" style="min-width: 50%; font-size: 16px">
+  <div clas="container">
+    <div class="row">
+      <div class="col-md-1 col-lg-2 d-none d-md-block"></div>
+      <div class="col-sm-12 col-md-12 col-lg-7">
+        <div class="align-left">
+          <h1>Louro José - Joinville</h1>
+          <p>
+            China in Box o maior delivery de comida chinesa entrega pratos
+            feitos na hora do seu pedido, na caixinha mais conhecida do Brasil.
+            Pratos tradicionais como yakissoba, frango xadrez, rolinho primavera
+            e banana caramelada para pedir on-line. Peça agora
+          </p>
+          <p>Comida Chinesa • 50-60 min • 4.40 km • $$$</p>
+        </div>
+        <div class="col">
+          <mat-form-field>
+            <mat-label>
+              <b>Promoções</b>
+            </mat-label>
+            <mat-select>
+              <mat-option
+                *ngFor="let option of options; let index = i"
+                [value]="option.name"
+                >{{ option.name }}</mat-option
+              >
+            </mat-select>
+          </mat-form-field>
+          <mat-form-field color="warn" style="min-width: 50%; font-size: 16px">
             <input
               matInput
               name="myInput"
@@ -28,47 +34,56 @@
             />
             <mat-icon matSuffix>search</mat-icon>
           </mat-form-field>
+        </div>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct
+              spitz breeds of dog from Japan. A small, agile dog that copes very
+              well
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
       </div>
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu" />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
-    </div>
-    <div fxFlex.lt-xl="22" fxFlex.lt-md="0" fxFlex.lt-sm="0" fxFlex.lt-lg="22">
-      <mat-card class="example-card">
-        <mat-card-header>
-          <div mat-card-avatar class="example-header-image"></div>
-          <mat-card-title>Shiba Inu</mat-card-title>
-          <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg"
-          alt="Photo of a Shiba Inu" />
-        <mat-card-content>
-          <p>
-            The Shiba Inu is the smallest of the six original and distinct spitz
-            breeds of dog from Japan. A small, agile dog that copes very well
-          </p>
-        </mat-card-content>
-        <mat-card-actions>
-          <button mat-button>LIKE</button>
-          <button mat-button>SHARE</button>
-        </mat-card-actions>
-      </mat-card>
+      <div class="col-lg-3 col-md-2 d-none d-lg-block">
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Shiba Inu</mat-card-title>
+            <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+          </mat-card-header>
+          <img
+            mat-card-image
+            src="https://material.angular.io/assets/img/examples/shiba2.jpg"
+            alt="Photo of a Shiba Inu"
+          />
+          <mat-card-content>
+            <p>
+              The Shiba Inu is the smallest of the six original and distinct
+              spitz breeds of dog from Japan. A small, agile dog that copes very
+              well
+            </p>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-button>LIKE</button>
+            <button mat-button>SHARE</button>
+          </mat-card-actions>
+        </mat-card>
+      </div>
     </div>
   </div>
 </div>

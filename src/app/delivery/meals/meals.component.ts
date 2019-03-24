@@ -1,5 +1,12 @@
+import { Meal } from './../../dto/meal.interface';
+import { Group } from './../../dto/group.interface';
 import { Component, OnInit } from '@angular/core';
 import { CardService } from 'src/app/shared/services/card.service';
+import { ActivatedRoute } from '@angular/router';
+import { MealService } from 'src/app/shared/services/meal.service';
+import { map, take, switchMap } from 'rxjs/operators';
+import { Card } from 'src/app/dto/card.interface';
+import { Option } from 'src/app/dto/option.interface';
 
 @Component({
   selector: 'app-meals',
@@ -7,7 +14,42 @@ import { CardService } from 'src/app/shared/services/card.service';
   styleUrls: ['./meals.component.sass']
 })
 export class MealsComponent implements OnInit {
-  constructor(private cardService: CardService) {}
+  card: Card;
+  restaurantId: number;
+  group: Array<Group>;
 
-  ngOnInit() {}
+  constructor(
+    private cardService: CardService,
+    private activated: ActivatedRoute,
+    private mealService: MealService
+  ) {}
+
+  ngOnInit() {
+    this.activated.paramMap
+      .pipe(take(1))
+      .pipe(
+        switchMap(res => {
+          const cardId = +res.get('id');
+          return this.cardService.getCard(cardId);
+        })
+      )
+      .pipe(
+        switchMap(res => {
+          this.card = <Card>res;
+          return this.mealService.getGroupMeal(this.card.restaurantId);
+        })
+      )
+      .pipe(
+        switchMap((res: Array<Group>) => {
+          this.group = res;
+          console.log(res);
+          console.log('id', res[0].meals[0].id);
+          return this.mealService.getOption(this.group[0].meals[0].id);
+        })
+      )
+      .subscribe((res: Array<Option>) => {
+        console.log(res);
+        this.group[0].meals[0].options = res;
+      });
+  }
 }

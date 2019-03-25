@@ -20,7 +20,7 @@
       "price": "17,90"
     },
     {
-      "id": 1,
+      "id": 2,
       "mealId": 1,
       "description": "Macarrão integral com bolho bolonhesa diferenciado",
       "name": "Macarrão integral caseiro",
@@ -30,7 +30,8 @@
   "group": [
     {
       "id": 1,
-      "name": "Macarrão tradicional"
+      "name": "Macarrão tradicional",
+      "restaurantId": 1
     }
   ],
   "meal": [

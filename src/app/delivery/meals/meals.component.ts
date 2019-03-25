@@ -39,17 +39,29 @@ export class MealsComponent implements OnInit {
           return this.mealService.getGroupMeal(this.card.restaurantId);
         })
       )
-      .pipe(
-        switchMap((res: Array<Group>) => {
-          this.group = res;
-          console.log(res);
-          console.log('id', res[0].meals[0].id);
-          return this.mealService.getOption(this.group[0].meals[0].id);
-        })
-      )
-      .subscribe((res: Array<Option>) => {
-        console.log(res);
-        this.group[0].meals[0].options = res;
+      .subscribe((res: Array<Group>) => {
+        this.group = res;
+        console.log('froup', res);
+        // console.log('id', res[0].meals[0].id);
+        // return this.mealService.getOption(this.group[0].meals[0].id);
+        this.getOptions();
       });
+  }
+
+  getOptions() {
+    console.log('ww', this.group);
+    // this.group.forEach(group => {
+    //   group.meal.forEach(meal => {
+    //     console.log('ddw', meal.id);
+    //     this.mealService.getOption(meal.id).subscribe((res: Array<Option>) => {
+    //       meal.option = res;
+    //       console.log('options', res);
+    //     });
+    //   });
+    // });
+    this.mealService.getOption(1).subscribe((res: Array<Option>) => {
+      this.group[0].meal[0].option = res;
+      console.log('options', res);
+    });
   }
 }

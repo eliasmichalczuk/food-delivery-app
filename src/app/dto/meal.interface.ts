@@ -5,5 +5,5 @@ export interface Meal {
   groupId: number;
   name: string;
   price: number;
-  options: Array<Option>;
+  option: Array<Option>;
 }

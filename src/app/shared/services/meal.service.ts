@@ -15,6 +15,6 @@ export class MealService {
   }
 
   getOption(mealId: number) {
-    return this.http.get(environment.connection + `/option/${mealId}`);
+    return this.http.get(environment.connection + `/option?mealId=${mealId}`);
   }
 }
